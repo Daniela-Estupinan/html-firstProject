@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Wave - Hallyu 3.0 </title>
+    <style>
+        body{
+            background:#F5EEDC;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color:#1A1A40;
+            border: 1px solid #6583b6;
+            background: #6583b6;
+        }
+        h2{
+            text-align: center;
+            font-size: 35px;
+            color:#325288;
+             font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a{
+          text-decoration: none;
+          color:#9C51E0;
+          font-size:22px;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:#7882A4;
+            background: rgba(120, 130, 164,0.1);
+        }
+        ul{
+         list-style-type: none; 
+         padding: 0;
+         text-align: center;
+         color:#9C51E0;
+        }
+        
+        li{
+          display:inline;
+          margin: 0 40px;
+          
+        }
+        img{
+            display:block;
+            margin:0 auto;
+        }
+        img:hover{
+            width: 450px;
+        }
+         p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        }
+        .content{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px 60px;
+        }
+        button{
+          display:block;
+          margin: 20px auto;
+          color: #fff;
+          font-size: 20px;
+          background: #8843F2;
+          padding: 10px 15px;
+          border:1px solid #8843F2;
+          border-radius:40px;
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.54);
+          transition: all 200ms ease-in-out;
+      }
+      button:hover{
+        color:#8843F2;
+        background:#fff;
+        cursor: pointer;
+      }
+      .footer{
+          font-size: 18px;
+          opacity: 0.7;
+      }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1> 
+        KOREAN WAVE 
+    </h1>
+    <h2>
+        Hallyu 3.0
+    </h2>
+    <img src="https://indvstrvs.org/wp-content/uploads/2020/06/Korean-Wave-Hallyu-Brings-Cultural-Power-Tech-Influence.jpeg" 
+            width="300" alt:"Women Hallyu"/>
+    <hr/>
+    <ul>
+        <li class="kpop-info">
+            <a href=" https://www.90daykorean.com/what-is-kpop/" 
+            target="_blank" >Kpop</a>
+        </li>
+        <li class ="kmovies-info">
+            <a href="https://www.goodhousekeeping.com/life/entertainment/g33446615/korean-movies/" 
+            target="_blank" >Kmovies</a>
+        </li>
+        <li class="kdramas-info">
+             <a href="https://www.imdb.com/list/ls069313280/" 
+            target="_blank" >Kdramas</a>
+        </li>
+    </ul>
+    <hr/>
+    <p>
+        Hallyu has successfully achieved milestones across different media types. Bong Joon-ho’s groundbreaking film Parasite received 
+        universal acclaim and awards internationally. <br />
+        K-pop boy band BTS accounts for USD 4.65 billion of South Korea’s GDP and rivals The Beatles on the charts. <br /> 
+        While South Korean game developer Bluehole’s PlayerUnknown’s Battlegrounds reach critical success, with PlayerUnknown’s Battlegrounds Mobile becoming the highest-grossing video game in March.
+    </p>
+     <img src="https://www.nacionrex.com/__export/1625496653572/sites/debate/img/2021/07/05/bts-louis-vuitton-seul-2021_1_crop1625495685518.jpg_172596871.jpg" 
+      width="300" alt:"Kpop"/><br/><br/>
+    <a href="https://indvstrvs.org/korean-wave-hallyu-brings-cultural-power-tech-influence/" 
+    target="_blank" class="hallyu">
+    <strong>Learn More</strong>
+    </a>
+    <br/> <br/>
+    <button>
+        Suscribe for more info
+    </button>
+    <p class="footer">
+        Created by Daniela Estupinan
+    </p>
+    </div>
+<script>
+    function suscribe(){
+        
+        let name=prompt("What is your name?");
+        var confirmation = confirm("Are you interested in suscribe?");
+        if (confirmation==true){
+            let contactMedia=prompt("Will you like to recive by phone number or email?");
+            contactMedia = contactMedia.toLowerCase().trim();
+            if(contactMedia === "phone number"){
+                let infoContact =prompt("What is your phone number?");
+                alert("Hi "+name+"! Thank you for suscribe! 💜 " +"Contact info: " +infoContact );
+            }else{
+                if(contactMedia === "email"){
+                    let infoContact =prompt("What is your email?");
+                    alert("Hi "+name+"! Thank you for suscribe! 💜 "+"Contact info: " +infoContact );
+                }else{
+                    let contactMedia=prompt("Will you like to recive by mail or email?");
+                }
+            }
+        }else{
+            alert("Thanks for reading " + name + "!💜");
+        }
+
+    }
+    button = document.querySelector("button");
+    button.addEventListener("click", suscribe);
+</script>
+
+</body>
+</html>
